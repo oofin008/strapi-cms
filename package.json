@@ -5,22 +5,25 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "develop:watch": "strapi develop --watch-admin",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.3.4",
-    "@strapi/plugin-users-permissions": "4.3.4",
+    "@strapi/plugin-graphql": "4.3.4",
     "@strapi/plugin-i18n": "4.3.4",
+    "@strapi/plugin-users-permissions": "4.3.4",
+    "@strapi/strapi": "4.3.4",
     "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "32d6e369-32ba-4393-8d7b-4a8b18b3bb6a"
+    "uuid": "32d6e369-32ba-4393-8d7b-4a8b18b3bb6a",
+    "telemetryDisabled": true
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
